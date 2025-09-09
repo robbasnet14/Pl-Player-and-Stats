@@ -1,0 +1,9 @@
+com/example/pl_connect/CorsConfig.class
+com/example/pl_connect/player/PlayerConfig.class
+com/example/pl_connect/PlConnectApplication.class
+com/example/pl_connect/player/PlayerController.class
+com/example/pl_connect/HomeController.class
+com/example/pl_connect/player/PlayerRepository.class
+com/example/pl_connect/CorsConfig$1.class
+com/example/pl_connect/player/Player.class
+com/example/pl_connect/player/PlayerService.class
