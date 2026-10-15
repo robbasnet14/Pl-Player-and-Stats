@@ -57,6 +57,9 @@ for team_url in team_urls:
 # Combine all teams
 stat_df = pd.concat(all_teams, ignore_index=True)
 
+# Drop the per-club aggregate rows FBref appends to every squad table
+stat_df = stat_df[~stat_df['Player'].isin(['Squad Total', 'Opponent Total'])]
+
 # Clean columns to match your DB
 stat_df = stat_df.rename(columns={
     'Player': 'name',

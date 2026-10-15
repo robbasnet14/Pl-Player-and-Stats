@@ -18,6 +18,9 @@ for col in numeric_cols:
 # Drop rows where age or MP is missing (required columns)
 df_clean = df_clean.dropna(subset=['age','mp'])
 
+# Drop the per-club aggregate rows, which have an age and MP but are not players
+df_clean = df_clean[~df_clean['name'].isin(['Squad Total', 'Opponent Total'])]
+
 # Save cleaned CSV
 df_clean.to_csv("prem_stats_clean_final.csv", index=False)
 print("CSV cleaned successfully!")
