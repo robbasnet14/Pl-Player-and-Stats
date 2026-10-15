@@ -1,0 +1,8 @@
+# Dependencies and build output: reinstall with `npm ci` / `mvn package`
+node_modules/
+Frontend/@fortawesome/
+Backend/target/
+
+# Local and OS files
+.env
+.DS_Store
